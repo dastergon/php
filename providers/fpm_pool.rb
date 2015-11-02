@@ -49,7 +49,7 @@ def register_fpm_service
         provider Chef::Provider::Service::Upstart
       end
     end
-    action :enable
+    action [:enable, :start]
   end
 end
 
